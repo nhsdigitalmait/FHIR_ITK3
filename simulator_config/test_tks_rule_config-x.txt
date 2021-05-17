@@ -1,0 +1,733 @@
+# MUST Support all codes in CodeSystem: https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2
+
+#Code	Description
+#ITK003D	ITK eDischarge
+#ITK004D	ITK Mental Health eDischarge
+#ITK005D	ITK Emergency Care eDischarge
+#ITK006D	ITK Outpatient Letter
+#ITK007C	ITK GP Connect Send Document
+#ITK008M	ITK Response
+#ITK009D	ITK Digital Medicine Immunization Document
+#ITK010D	ITK Digital Medicine Emergency Supply Document
+#ITK012M	ITK National Pathology
+#pds-birth-notification-1	NEMS Event Message - PDS Birth Notification
+#pds-change-of-address-1	NEMS Event Message - PDS Change of Address
+#pds-change-of-gp-1	NEMS Event Message - PDS Change of GP
+#pds-death-notification-1	NEMS Event Message - PDS Death Notification
+#blood-spot-test-outcome-1	DCH NEMS Event Message - Blood Spot Test Outcome
+#newborn-hearing-1	DCH NEMS Event Message - Newborn Hearing
+#nipe-outcome-1	DCH NEMS Event Message - NIPE Outcome
+
+# Simulator rule definition file for ITK Testbench
+# FHIR Messaging simulator config
+# Chris Berry
+
+BEGIN RESPONSES
+inf_ack_only_invrep	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	invrep
+inf_ack_only_10001	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	10001
+inf_ack_only_10002	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	10002
+inf_ack_only_10003	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	10003
+inf_ack_only_10004	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	10004
+inf_ack_only_10005	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	10005
+inf_ack_only_10006	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	10006
+inf_ack_only_10007	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	10007
+inf_ack_only_10008	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	10008
+inf_ack_only_10009	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	10009
+inf_ack_only_10010	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	10010
+inf_ack_only_20001	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20001
+inf_ack_only_20002	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20002
+inf_ack_only_20003	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20003
+inf_ack_only_20004	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20004
+inf_ack_only_20005	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20005
+inf_ack_only_20006	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20006
+inf_ack_only_20007	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20007
+inf_ack_only_20008	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20008
+inf_ack_only_20009	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20009
+inf_ack_only_20010	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20010
+inf_ack_only_20011	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20011
+inf_ack_only_20012	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20012
+inf_ack_only_20013	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20013
+inf_ack_only_20014	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20014
+inf_ack_only_20015 	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorInfAckOnly		"200 OK"	20015
+bus_ack_only_30001	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorBusAckOnly		"200 OK"	30001
+bus_ack_only_30002	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorBusAckOnly		"200 OK"	30002
+bus_ack_only_30003	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorBusAckOnly		"200 OK"	30003
+bus_ack_only_30004	class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActorBusAckOnly		"200 OK"	30004
+acks_IB001			class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActor				"200 OK"	IB001
+acks_IB002			class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActor				"200 OK"	IB002
+acks_IB003			class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActor				"200 OK"	IB003
+acks_IB004			class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.MESHFHIRITKRoutingActor				"200 OK"	IB004
+no_response class:uk.nhs.digital.mait.tkwx.tk.internalservices.rules.routingactor.NoResponse
+do_process	NONE	0
+END RESPONSES
+
+BEGIN SUBSTITUTIONS
+__BAID_BUNDLE_UUID__ 	uuid
+__IAID_BUNDLE_UUID__ 	uuid
+__IA_BUNDLE_UUID__ 	uuid
+__IA_MESSAGE_HEADER_UUID__ 	uuid
+__IA_OPERATION_OUTCOME_UUID__ 	uuid
+__BA_BUNDLE_UUID__ 	uuid
+__BA_MESSAGE_HEADER_UUID__ 	uuid
+__SENDER_UUID__ 	uuid
+__BA_OPERATION_OUTCOME_UUID__ 	uuid
+__IA_OPERATION_OUTCOME_UUID__ 	uuid
+__TIMESTAMP__	ISO8601datetime
+__JOBID__ 	uuid
+__ERRORID__ 	uuid
+__IDENTIFIER__ Literal 9999999999
+__REQUEST_UUID__	Xpath //fhir:MessageHeader/fhir:id/@value
+__REQUEST_SOURCE_ENDPOINT__ Xpath /fhir:Bundle/fhir:entry/fhir:resource/fhir:MessageHeader/fhir:source/fhir:endpoint/@value
+__REQUEST_DEST_ENDPOINT__ Xpath /fhir:Bundle/fhir:entry/fhir:resource/fhir:MessageHeader/fhir:destination/fhir:endpoint/@value
+__REQUEST_FOCUS_UUID__ Xpath /fhir:Bundle/fhir:entry/fhir:resource/fhir:Bundle/fhir:id/@value
+END SUBSTITUTIONS
+
+#Test Data Lists
+
+######################################################################################################################################################################################
+#DEV Test Data List
+# BA 30001 List
+#'9657702003 9657702011 9657702038 9657702046 9657702054 9657702062 9657702070 9657702089 9657702097 9657702100 9657702119 9657702127 9657702135 9657702143 9657702151'
+
+# BA 30002 List
+#'9657702178 9657702186 9657702194 9657702208 9657702216 9657702224 9657702232 9657702240 9657702259 9657702267 9657702275 9657702283 9657702291 9657702305 9657702313'
+
+# BA 30003 List
+#'99657702402 9657702410 9657702429 9657702437 9657702445'
+
+# BA 30004 List
+#'9657702445'
+
+#######################################################################################################################################################################################
+
+######################################################################################################################################################################################
+#INT Test Data List
+# BA 30001 List
+#'9686477462 9686477055 9686477578 9686476822 9686477640 9686477233 9686477381 9686477268 9686477284 9686477373'
+
+# BA 30002 List
+#'9686477519 9686477535 9686476849 9686477039 9686477217 9686477225 9686477683 9686477527 9686476962 9686476989'
+
+# BA 30003 List
+#'9686477209 9686477047 9686477411 9686477446 9686476881'
+
+
+#######################################################################################################################################################################################
+
+
+BEGIN EXPRESSIONS
+return_testdata_20001		mesh_dat	XpathEquals boolean((//*[local-name()='Practitioner']/*[local-name()='id']/@value=tokenize(//*[local-name()='MessageHeader']/*[local-name()='receiver']/*[local-name()='reference']/@value,':')[last()]) and not((//*[local-name()='Practitioner'][*[local-name()='id']/@value=tokenize(//*[local-name()='MessageHeader']/*[local-name()='receiver']/*[local-name()='reference']/@value,':')[last()]]/*[local-name()='identifier'][*[local-name()='system']/@value='https://fhir.nhs.uk/Id/sds-user-id']/*[local-name()='value'][@value=555079469105 or @value=555079470108 or @value=555079471109 or @value=555079472100 or @value=555079478106]))) true
+return_testdata_20002		mesh_dat	XpathEquals	boolean((//*[local-name()='Organization']/*[local-name()='id']/@value=tokenize(//*[local-name()='MessageHeader']/*[local-name()='receiver']/*[local-name()='reference']/@value,':')[last()]) and not(//*[local-name()='Organization'][*[local-name()='id']/@value=tokenize(//*[local-name()='MessageHeader']/*[local-name()='receiver']/*[local-name()='reference']/@value,':')[last()]]/*[local-name()='identifier'][*[local-name()='system']/@value='https://fhir.nhs.uk/Id/ods-organization-code']/*[local-name()='value'][@value='P86624'])) true
+return_testdata_IB001		mesh_dat	XpathEquals	boolean((//*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value'][contains('9657702003 9657702011 9657702038 9657702046 9657702054 9657702062 9657702070 9657702089 9657702097 9657702100 9657702119 9657702127 9657702135 9657702143 9657702151' , @value)])and(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='true'])) true
+return_testdata_30001		mesh_dat	XpathEquals	boolean((//*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value'][contains('9657702003 9657702011 9657702038 9657702046 9657702054 9657702062 9657702070 9657702089 9657702097 9657702100 9657702119 9657702127 9657702135 9657702143 9657702151' , @value)])and(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='false'])) true
+return_testdata_IB002		mesh_dat	XpathEquals	boolean((//*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value'][contains('9657702178 9657702186 9657702194 9657702208 9657702216 9657702224 9657702232 9657702240 9657702259 9657702267 9657702275 9657702283 9657702291 9657702305 9657702313' , @value)])and(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='true'])) true
+return_testdata_30002		mesh_dat	XpathEquals	boolean((//*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value'][contains('9657702178 9657702186 9657702194 9657702208 9657702216 9657702224 9657702232 9657702240 9657702259 9657702267 9657702275 9657702283 9657702291 9657702305 9657702313' , @value)])and(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='false'])) true
+return_testdata_IB003		mesh_dat	XpathEquals	boolean((//*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value'][contains('9657702402 9657702410 9657702429 9657702437' , @value)])and(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='true'])) true
+return_testdata_30003		mesh_dat	XpathEquals	boolean((//*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value'][contains('9657702402 9657702410 9657702429 9657702437' , @value)])and(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='false'])) true
+return_testdata_IB004		mesh_dat	XpathEquals	boolean((//*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value'][contains('9657702445' , @value)])and(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='true'])) true
+return_testdata_30004		mesh_dat	XpathEquals	boolean((//*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value'][contains('9657702445' , @value)])and(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='false'])) true
+return_INT_testdata_IB001	mesh_dat	XpathEquals	boolean((//*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value'][contains('9686477462 9686477055 9686477578 9686476822 9686477640 9686477233 9686477381 9686477268 9686477284 9686477373' , @value)])and(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='true'])) true
+return_INT_testdata_30001	mesh_dat	XpathEquals	boolean((//*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value'][contains('9686477462 9686477055 9686477578 9686476822 9686477640 9686477233 9686477381 9686477268 9686477284 9686477373' , @value)])and(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='false'])) true
+return_INT_testdata_IB002	mesh_dat	XpathEquals	boolean((//*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value'][contains('9686477519 9686477535 9686476849 9686477039 9686477217 9686477225 9686477683 9686477527 9686476962 9686476989' , @value)])and(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='true'])) true
+return_INT_testdata_30002	mesh_dat	XpathEquals	boolean((//*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value'][contains('9686477519 9686477535 9686476849 9686477039 9686477217 9686477225 9686477683 9686477527 9686476962 9686476989' , @value)])and(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='false'])) true
+return_INT_testdata_IB003	mesh_dat	XpathEquals	boolean((//*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value'][contains('9686477209 9686477047 9686477411 9686477446 9686476881' , @value)])and(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='true'])) true
+return_INT_testdata_30003	mesh_dat	XpathEquals	boolean((//*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value'][contains('9686477209 9686477047 9686477411 9686477446 9686476881' , @value)])and(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='false'])) true
+return_infack_invrep		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='invrep']) true
+return_noresponse			mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='noresponse']) true
+return_infnack_10001		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='10001']) true
+return_infnack_10002		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='10002']) true
+return_infnack_10003		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='10003']) true
+return_infnack_10004		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='10004']) true
+return_infnack_10005		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='10005']) true
+return_infnack_10006		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='10006']) true
+return_infnack_10007		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='10007']) true
+return_infnack_10008		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='10008']) true
+return_infnack_10009		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='10009']) true
+return_infnack_10010		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='10010']) true
+return_infnack_20001		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20001']) true
+return_infnack_20002		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20002']) true
+return_infnack_20003		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20003']) true
+return_infnack_20004		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20004']) true
+return_infnack_20005		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20005']) true
+return_infnack_20006		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20006']) true
+return_infnack_20007		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20007']) true
+return_infnack_20008		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20008']) true
+return_infnack_20009		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20009']) true
+return_infnack_20010		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20010']) true
+return_infnack_20011		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20011']) true
+return_infnack_20012		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20012']) true
+return_infnack_20013		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20013']) true
+return_infnack_20014		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20014']) true
+return_infnack_20015		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='20015']) true
+return_busack_30001			mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='30001']) true
+return_busnack_30002		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='30002']) true
+return_busnack_30003		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='30003']) true
+return_busnack_30004		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='30004']) true
+prod_return_bothack_IB001	mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='IB001']) true
+prod_return_bothack_IB002	mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='IB002']) true
+prod_return_bothack_IB003	mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='IB003']) true
+prod_return_bothack_IB004	mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']//*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Practitioner']/*[local-name()='name']/*[local-name()='given'][@value='IB004']) true
+prod_return_infackonly		mesh_dat	XpathEquals	boolean((//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='true']) and (//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='BusAckRequested']/*[local-name()='valueBoolean'][@value='false'])) true
+prod_return_busackonly		mesh_dat	XpathEquals	boolean((//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='false']) and (//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='BusAckRequested']/*[local-name()='valueBoolean'][@value='true'])) true
+prod_return_noack			mesh_dat	XpathEquals	boolean((//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='false']) and (//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='BusAckRequested']/*[local-name()='valueBoolean'][@value='false'])) true
+prod_return_bothack			mesh_dat	XpathEquals	boolean((//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='true']) and (//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='BusAckRequested']/*[local-name()='valueBoolean'][@value='true'])) true
+prod_return_notsetack		mesh_dat	XpathEquals	boolean((//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='true' or @value='false']) and (//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='BusAckRequested']/*[local-name()='valueBoolean'][@value='true' or @value='false'])) false
+incoming_busack_inf			mesh_dat	XpathEquals boolean((//*[local-name()='OperationOutcome']/*[local-name()='issue']/*[local-name()='details']/*[local-name()='coding']/*[local-name()='code'][@value='30001' or @value='30002' or @value='30003']) and (//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='true'])) true
+incoming_busack_noinfack	mesh_dat	XpathEquals boolean((//*[local-name()='OperationOutcome']/*[local-name()='issue']/*[local-name()='details']/*[local-name()='coding']/*[local-name()='code'][@value='30001' or @value='30002' or @value='30003']) and (not(//*[local-name()='MessageHeader']/*[local-name()='extension']/*[local-name()='extension'][@url='InfAckRequested']/*[local-name()='valueBoolean'][@value='true']))) true
+incoming_infack				mesh_dat	XpathEquals	boolean(//*[local-name()='OperationOutcome']/*[local-name()='issue']/*[local-name()='details']/*[local-name()='coding']/*[local-name()='code'][@value='10001' or @value='10002' or @value='10003' or @value='10004' or @value='10005' or @value='10006' or @value='10007' or @value='10008' or @value='10009' or @value='20001' or @value='20002' or @value='20003' or @value='20004' or @value='20005' or @value='20006' or @value='20007' or @value='20008' or @value='20009' or @value='20010' or @value='20011' or @value='20012' or @value='20013']) true
+prod_return_10001			mesh_dat	XpathEquals boolean(contains(//*[local-name()='MessageHeader']/*[local-name()='extension']/@url,'https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2')) false
+prod_return_10002			mesh_dat	XpathEquals boolean(//*[local-name()='MessageHeader']/*[local-name()='extension'][contains(@url, 'https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling')]/*[local-name()='extension'][@url = 'InfAckRequested']/*[local-name()='valueBoolean'][@value='true' or @value='false']) false
+prod_return_10003			mesh_dat	XpathEquals boolean(//*[local-name()='MessageHeader']/*[local-name()='extension'][contains(@url, 'https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling')]/*[local-name()='extension'][@url = 'BusAckRequested']/*[local-name()='valueBoolean'][@value='true' or @value='false']) false	
+prod_return_10004			mesh_dat	XpathEquals boolean(//*[local-name()='MessageHeader']/*[local-name()='extension'][contains(@url, 'https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling')]/*[local-name()='extension'][@url = 'MessageDefinition']/*[local-name()='valueReference']/*[local-name()='reference'][starts-with(@value, 'https://fhir.nhs.uk/STU3/MessageDefinition/') and contains(@value, 'ITK-eDischarge-MessageDefinition-4') or contains(@value, 'ITK-EC-eDischarge-MessageDefinition-4') or contains(@value, 'ITK-MH-eDischarge-MessageDefinition-4') or contains(@value, 'ITK-OPL-MessageDefinition-4') or contains(@value, ' ITK-DM-Immunization-MessageDefinition-1') or contains(@value, 'ITK-DM-EmergencySupply-MessageDefinition-1') or contains(@value, ' ITK-GPConnectSendDocument-MessageDefinition-1') or contains(@value, ' ITK-EMS-MessageDefinition-1') or contains(@value, 'ITK-Response-MessageDefinition-1') or contains(@value, 'ITK-SendPayload-MessageDefinition-Instance-1')]) false
+prod_return_10007			mesh_dat	XpathEquals boolean(//*[local-name()='MessageHeader']/*[local-name()='extension'][contains(@url, 'https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling')]/*[local-name()='extension'][@url = 'SenderReference']/*[local-name()='valueString'][matches(@value,'^.*\w+.*$')]) false
+prod_return_20002			mesh_dat	XpathEquals	boolean(//*[local-name()='Practitioner'][*[local-name()='id']/@value = substring-after(substring-after(//*[local-name()='MessageHeader']/*[local-name()='sender']/*[local-name()='reference']/@value,':'),':')] or //*[local-name()='Organization'][*[local-name()='id']/@value = substring-after(substring-after(//*[local-name()='MessageHeader']/*[local-name()='sender']/*[local-name()='reference']/@value,':'),':')]/*[local-name()='identifier']/*[local-name()='value']/@value='P86224') false
+prod_return_20004			mesh_dat	XpathEquals boolean(not(//*[local-name()='Binary']) or //*[local-name()='Binary']/*[local-name()='contentType']/@value='application/pdf') false			
+bundle		mesh_dat	XpathEquals	boolean(//*[local-name()='Bundle']) true
+passthrough	Always
+END EXPRESSIONS
+
+#ITK eDischarge
+BEGIN RULE
+ITK003D
+IF return_noresponse then do_process
+IF prod_return_10001 then inf_ack_only_10001
+IF prod_return_10002 then inf_ack_only_10002
+IF prod_return_10003 then inf_ack_only_10003
+#IF prod_return_10004 then inf_ack_only_10004
+IF prod_return_10007 then inf_ack_only_10007
+#IF prod_return_20002 then inf_ack_only_20002
+#IF prod_return_20004 then inf_ack_only_20004
+IF return_infack_invrep then inf_ack_only_invrep
+IF return_infnack_10001 then inf_ack_only_10001
+IF return_infnack_10002 then inf_ack_only_10002
+IF return_infnack_10003 then inf_ack_only_10003
+IF return_infnack_10004 then inf_ack_only_10004
+IF return_infnack_10005 then inf_ack_only_10005
+IF return_infnack_10006 then inf_ack_only_10006
+IF return_infnack_10007 then inf_ack_only_10007
+IF return_infnack_10008 then inf_ack_only_10008
+IF return_infnack_10009 then inf_ack_only_10009
+IF return_infnack_10010 then inf_ack_only_10010
+IF return_infnack_20001 then inf_ack_only_20001
+IF return_infnack_20002 then inf_ack_only_20002
+IF return_infnack_20003 then inf_ack_only_20003
+IF return_infnack_20004 then inf_ack_only_20004
+IF return_infnack_20005 then inf_ack_only_20005
+IF return_infnack_20006 then inf_ack_only_20006
+IF return_infnack_20007 then inf_ack_only_20007
+IF return_infnack_20008 then inf_ack_only_20008
+IF return_infnack_20009 then inf_ack_only_20009
+IF return_infnack_20010 then inf_ack_only_20010
+IF return_infnack_20011 then inf_ack_only_20011
+IF return_infnack_20012 then inf_ack_only_20012
+IF return_infnack_20013 then inf_ack_only_20013
+IF return_infnack_20013 then inf_ack_only_20014
+IF return_infnack_20013 then inf_ack_only_20015
+IF return_testdata_20002 then inf_ack_only_20002
+IF return_testdata_20001 then inf_ack_only_20001
+IF return_testdata_IB001 then acks_IB001
+IF return_testdata_30001 then bus_ack_only_30001
+IF return_testdata_IB002 then acks_IB002
+IF return_testdata_30002 then bus_ack_only_30002
+IF return_testdata_IB003 then acks_IB003
+IF return_testdata_30003 then bus_ack_only_30003
+IF return_testdata_IB004 then acks_IB004
+IF return_testdata_30003 then bus_ack_only_30004
+IF prod_return_noack then do_process
+IF prod_return_bothack_IB001 then acks_IB001
+IF prod_return_bothack_IB002 then acks_IB002
+IF prod_return_bothack_IB003 then acks_IB003
+IF prod_return_bothack_IB003 then acks_IB004
+IF prod_return_infackonly then inf_ack_only_20013
+IF prod_return_busackonly then bus_ack_only_30001
+IF prod_return_notsetack then inf_ack_only_10002
+IF return_busack_30001 then bus_ack_only_30001
+IF return_busnack_30002 then bus_ack_only_30002
+IF return_busnack_30003 then bus_ack_only_30003
+IF return_busnack_30004 then bus_ack_only_30004
+IF prod_return_bothack then acks_IB001
+END RULE
+
+#ITK Mental Health eDischarge
+BEGIN RULE
+ITK004D
+IF return_noresponse then do_process
+IF prod_return_10001 then inf_ack_only_10001
+IF prod_return_10002 then inf_ack_only_10002
+IF prod_return_10003 then inf_ack_only_10003
+#IF prod_return_10004 then inf_ack_only_10004
+IF prod_return_10007 then inf_ack_only_10007
+#IF prod_return_20002 then inf_ack_only_20002
+#IF prod_return_20004 then inf_ack_only_20004
+IF return_infack_invrep then inf_ack_only_invrep
+IF return_infnack_10001 then inf_ack_only_10001
+IF return_infnack_10002 then inf_ack_only_10002
+IF return_infnack_10003 then inf_ack_only_10003
+IF return_infnack_10004 then inf_ack_only_10004
+IF return_infnack_10005 then inf_ack_only_10005
+IF return_infnack_10006 then inf_ack_only_10006
+IF return_infnack_10007 then inf_ack_only_10007
+IF return_infnack_10008 then inf_ack_only_10008
+IF return_infnack_10009 then inf_ack_only_10009
+IF return_infnack_10010 then inf_ack_only_10010
+IF return_infnack_20001 then inf_ack_only_20001
+IF return_infnack_20002 then inf_ack_only_20002
+IF return_infnack_20003 then inf_ack_only_20003
+IF return_infnack_20004 then inf_ack_only_20004
+IF return_infnack_20005 then inf_ack_only_20005
+IF return_infnack_20006 then inf_ack_only_20006
+IF return_infnack_20007 then inf_ack_only_20007
+IF return_infnack_20008 then inf_ack_only_20008
+IF return_infnack_20009 then inf_ack_only_20009
+IF return_infnack_20010 then inf_ack_only_20010
+IF return_infnack_20011 then inf_ack_only_20011
+IF return_infnack_20012 then inf_ack_only_20012
+IF return_infnack_20013 then inf_ack_only_20013
+IF return_infnack_20013 then inf_ack_only_20014
+IF return_infnack_20013 then inf_ack_only_20015
+IF return_testdata_20002 then inf_ack_only_20002
+IF return_testdata_20001 then inf_ack_only_20001
+IF return_testdata_IB001 then acks_IB001
+IF return_testdata_30001 then bus_ack_only_30001
+IF return_testdata_IB002 then acks_IB002
+IF return_testdata_30002 then bus_ack_only_30002
+IF return_testdata_IB003 then acks_IB003
+IF return_testdata_30003 then bus_ack_only_30003
+IF return_testdata_IB004 then acks_IB004
+IF return_testdata_30003 then bus_ack_only_30004
+IF prod_return_noack then do_process
+IF prod_return_bothack_IB001 then acks_IB001
+IF prod_return_bothack_IB002 then acks_IB002
+IF prod_return_bothack_IB003 then acks_IB003
+IF prod_return_bothack_IB003 then acks_IB004
+IF prod_return_infackonly then inf_ack_only_20013
+IF prod_return_busackonly then bus_ack_only_30001
+IF prod_return_notsetack then inf_ack_only_10002
+IF return_busack_30001 then bus_ack_only_30001
+IF return_busnack_30002 then bus_ack_only_30002
+IF return_busnack_30003 then bus_ack_only_30003
+IF return_busnack_30004 then bus_ack_only_30004
+IF prod_return_bothack then acks_IB001
+END RULE
+
+#ITK Emergency Care eDischarge
+BEGIN RULE
+ITK005D
+IF return_noresponse then do_process
+IF prod_return_10001 then inf_ack_only_10001
+IF prod_return_10002 then inf_ack_only_10002
+IF prod_return_10003 then inf_ack_only_10003
+#IF prod_return_10004 then inf_ack_only_10004
+IF prod_return_10007 then inf_ack_only_10007
+#IF prod_return_20002 then inf_ack_only_20002
+#IF prod_return_20004 then inf_ack_only_20004
+IF return_infack_invrep then inf_ack_only_invrep
+IF return_infnack_10001 then inf_ack_only_10001
+IF return_infnack_10002 then inf_ack_only_10002
+IF return_infnack_10003 then inf_ack_only_10003
+IF return_infnack_10004 then inf_ack_only_10004
+IF return_infnack_10005 then inf_ack_only_10005
+IF return_infnack_10006 then inf_ack_only_10006
+IF return_infnack_10007 then inf_ack_only_10007
+IF return_infnack_10008 then inf_ack_only_10008
+IF return_infnack_10009 then inf_ack_only_10009
+IF return_infnack_10010 then inf_ack_only_10010
+IF return_infnack_20001 then inf_ack_only_20001
+IF return_infnack_20002 then inf_ack_only_20002
+IF return_infnack_20003 then inf_ack_only_20003
+IF return_infnack_20004 then inf_ack_only_20004
+IF return_infnack_20005 then inf_ack_only_20005
+IF return_infnack_20006 then inf_ack_only_20006
+IF return_infnack_20007 then inf_ack_only_20007
+IF return_infnack_20008 then inf_ack_only_20008
+IF return_infnack_20009 then inf_ack_only_20009
+IF return_infnack_20010 then inf_ack_only_20010
+IF return_infnack_20011 then inf_ack_only_20011
+IF return_infnack_20012 then inf_ack_only_20012
+IF return_infnack_20013 then inf_ack_only_20013
+IF return_infnack_20013 then inf_ack_only_20014
+IF return_infnack_20013 then inf_ack_only_20015
+IF return_testdata_20002 then inf_ack_only_20002
+IF return_testdata_20001 then inf_ack_only_20001
+IF return_testdata_IB001 then acks_IB001
+IF return_testdata_30001 then bus_ack_only_30001
+IF return_testdata_IB002 then acks_IB002
+IF return_testdata_30002 then bus_ack_only_30002
+IF return_testdata_IB003 then acks_IB003
+IF return_testdata_30003 then bus_ack_only_30003
+IF return_testdata_IB004 then acks_IB004
+IF return_testdata_30003 then bus_ack_only_30004
+IF prod_return_noack then do_process
+IF prod_return_bothack_IB001 then acks_IB001
+IF prod_return_bothack_IB002 then acks_IB002
+IF prod_return_bothack_IB003 then acks_IB003
+IF prod_return_bothack_IB003 then acks_IB004
+IF prod_return_infackonly then inf_ack_only_20013
+IF prod_return_busackonly then bus_ack_only_30001
+IF prod_return_notsetack then inf_ack_only_10002
+IF return_busack_30001 then bus_ack_only_30001
+IF return_busnack_30002 then bus_ack_only_30002
+IF return_busnack_30003 then bus_ack_only_30003
+IF return_busnack_30004 then bus_ack_only_30004
+IF prod_return_bothack then acks_IB001
+END RULE
+
+#ITK Outpatient Letter
+BEGIN RULE
+ITK006D
+IF return_noresponse then do_process
+IF prod_return_10001 then inf_ack_only_10001
+IF prod_return_10002 then inf_ack_only_10002
+IF prod_return_10003 then inf_ack_only_10003
+#IF prod_return_10004 then inf_ack_only_10004
+IF prod_return_10007 then inf_ack_only_10007
+#IF prod_return_20002 then inf_ack_only_20002
+#IF prod_return_20004 then inf_ack_only_20004
+IF return_infack_invrep then inf_ack_only_invrep
+IF return_infnack_10001 then inf_ack_only_10001
+IF return_infnack_10002 then inf_ack_only_10002
+IF return_infnack_10003 then inf_ack_only_10003
+IF return_infnack_10004 then inf_ack_only_10004
+IF return_infnack_10005 then inf_ack_only_10005
+IF return_infnack_10006 then inf_ack_only_10006
+IF return_infnack_10007 then inf_ack_only_10007
+IF return_infnack_10008 then inf_ack_only_10008
+IF return_infnack_10009 then inf_ack_only_10009
+IF return_infnack_10010 then inf_ack_only_10010
+IF return_infnack_20001 then inf_ack_only_20001
+IF return_infnack_20002 then inf_ack_only_20002
+IF return_infnack_20003 then inf_ack_only_20003
+IF return_infnack_20004 then inf_ack_only_20004
+IF return_infnack_20005 then inf_ack_only_20005
+IF return_infnack_20006 then inf_ack_only_20006
+IF return_infnack_20007 then inf_ack_only_20007
+IF return_infnack_20008 then inf_ack_only_20008
+IF return_infnack_20009 then inf_ack_only_20009
+IF return_infnack_20010 then inf_ack_only_20010
+IF return_infnack_20011 then inf_ack_only_20011
+IF return_infnack_20012 then inf_ack_only_20012
+IF return_infnack_20013 then inf_ack_only_20013
+IF return_infnack_20013 then inf_ack_only_20014
+IF return_infnack_20013 then inf_ack_only_20015
+IF return_testdata_20002 then inf_ack_only_20002
+IF return_testdata_20001 then inf_ack_only_20001
+IF return_testdata_IB001 then acks_IB001
+IF return_testdata_30001 then bus_ack_only_30001
+IF return_testdata_IB002 then acks_IB002
+IF return_testdata_30002 then bus_ack_only_30002
+IF return_testdata_IB003 then acks_IB003
+IF return_testdata_30003 then bus_ack_only_30003
+IF return_testdata_IB004 then acks_IB004
+IF return_testdata_30003 then bus_ack_only_30004
+IF prod_return_noack then do_process
+IF prod_return_bothack_IB001 then acks_IB001
+IF prod_return_bothack_IB002 then acks_IB002
+IF prod_return_bothack_IB003 then acks_IB003
+IF prod_return_bothack_IB003 then acks_IB004
+IF prod_return_infackonly then inf_ack_only_20013
+IF prod_return_busackonly then bus_ack_only_30001
+IF prod_return_notsetack then inf_ack_only_10002
+IF return_busack_30001 then bus_ack_only_30001
+IF return_busnack_30002 then bus_ack_only_30002
+IF return_busnack_30003 then bus_ack_only_30003
+IF return_busnack_30004 then bus_ack_only_30004
+IF prod_return_bothack then acks_IB001
+END RULE
+
+#ITK007C	ITK GP Connect Send Document
+BEGIN RULE
+ITK007C
+IF return_noresponse then do_process
+IF prod_return_10001 then inf_ack_only_10001
+IF prod_return_10002 then inf_ack_only_10002
+IF prod_return_10003 then inf_ack_only_10003
+#IF prod_return_10004 then inf_ack_only_10004
+IF prod_return_10007 then inf_ack_only_10007
+#IF prod_return_20002 then inf_ack_only_20002
+#IF prod_return_20004 then inf_ack_only_20004
+IF return_infack_invrep then inf_ack_only_invrep
+IF return_infnack_10001 then inf_ack_only_10001
+IF return_infnack_10002 then inf_ack_only_10002
+IF return_infnack_10003 then inf_ack_only_10003
+IF return_infnack_10004 then inf_ack_only_10004
+IF return_infnack_10005 then inf_ack_only_10005
+IF return_infnack_10006 then inf_ack_only_10006
+IF return_infnack_10007 then inf_ack_only_10007
+IF return_infnack_10008 then inf_ack_only_10008
+IF return_infnack_10009 then inf_ack_only_10009
+IF return_infnack_10010 then inf_ack_only_10010
+IF return_infnack_20001 then inf_ack_only_20001
+IF return_infnack_20002 then inf_ack_only_20002
+IF return_infnack_20003 then inf_ack_only_20003
+IF return_infnack_20004 then inf_ack_only_20004
+IF return_infnack_20005 then inf_ack_only_20005
+IF return_infnack_20006 then inf_ack_only_20006
+IF return_infnack_20007 then inf_ack_only_20007
+IF return_infnack_20008 then inf_ack_only_20008
+IF return_infnack_20009 then inf_ack_only_20009
+IF return_infnack_20010 then inf_ack_only_20010
+IF return_infnack_20011 then inf_ack_only_20011
+IF return_infnack_20012 then inf_ack_only_20012
+IF return_infnack_20013 then inf_ack_only_20013
+IF return_infnack_20013 then inf_ack_only_20014
+IF return_infnack_20013 then inf_ack_only_20015
+IF return_testdata_20002 then inf_ack_only_20002
+IF return_testdata_20001 then inf_ack_only_20001
+IF return_testdata_IB001 then acks_IB001
+IF return_testdata_30001 then bus_ack_only_30001
+IF return_testdata_IB002 then acks_IB002
+IF return_testdata_30002 then bus_ack_only_30002
+IF return_testdata_IB003 then acks_IB003
+IF return_testdata_30003 then bus_ack_only_30003
+IF return_testdata_IB004 then acks_IB004
+IF return_testdata_30003 then bus_ack_only_30004
+IF prod_return_noack then do_process
+IF prod_return_bothack_IB001 then acks_IB001
+IF prod_return_bothack_IB002 then acks_IB002
+IF prod_return_bothack_IB003 then acks_IB003
+IF prod_return_bothack_IB003 then acks_IB004
+IF prod_return_infackonly then inf_ack_only_20013
+IF prod_return_busackonly then bus_ack_only_30001
+IF prod_return_notsetack then inf_ack_only_10002
+IF return_busack_30001 then bus_ack_only_30001
+IF return_busnack_30002 then bus_ack_only_30002
+IF return_busnack_30003 then bus_ack_only_30003
+IF return_busnack_30004 then bus_ack_only_30004
+IF prod_return_bothack then acks_IB001
+END RULE
+
+#ITK008M	ITK Response
+BEGIN RULE
+ITK008M
+IF prod_return_10001 then inf_ack_only_10001
+IF prod_return_10002 then inf_ack_only_10002
+IF prod_return_10003 then inf_ack_only_10003
+IF incoming_busack_noinfack then do_process
+IF incoming_busack_inf then inf_ack_only_20013
+IF incoming_infack then do_process
+END RULE
+
+#ITK009D	ITK Digital Medicine Immunization Document
+BEGIN RULE
+ITK009D
+#IF prod_return_10001 then inf_ack_only_10001
+#IF prod_return_10002 then inf_ack_only_10002
+#IF prod_return_10003 then inf_ack_only_10003
+#IF prod_return_10004 then inf_ack_only_10004
+#IF prod_return_10007 then inf_ack_only_10007
+#IF prod_return_20002 then inf_ack_only_20002
+#IF prod_return_20004 then inf_ack_only_20004
+IF return_infack_invrep then inf_ack_only_invrep
+IF return_infnack_10001 then inf_ack_only_10001
+IF return_infnack_10002 then inf_ack_only_10002
+IF return_infnack_10003 then inf_ack_only_10003
+IF return_infnack_10004 then inf_ack_only_10004
+IF return_infnack_10005 then inf_ack_only_10005
+IF return_infnack_10006 then inf_ack_only_10006
+IF return_infnack_10007 then inf_ack_only_10007
+IF return_infnack_10008 then inf_ack_only_10008
+IF return_infnack_10009 then inf_ack_only_10009
+IF return_infnack_10010 then inf_ack_only_10010
+IF return_infnack_20001 then inf_ack_only_20001
+IF return_infnack_20002 then inf_ack_only_20002
+IF return_infnack_20003 then inf_ack_only_20003
+IF return_infnack_20004 then inf_ack_only_20004
+IF return_infnack_20005 then inf_ack_only_20005
+IF return_infnack_20006 then inf_ack_only_20006
+IF return_infnack_20007 then inf_ack_only_20007
+IF return_infnack_20008 then inf_ack_only_20008
+IF return_infnack_20009 then inf_ack_only_20009
+IF return_infnack_20010 then inf_ack_only_20010
+IF return_infnack_20011 then inf_ack_only_20011
+IF return_infnack_20012 then inf_ack_only_20012
+IF return_infnack_20013 then inf_ack_only_20013
+#IF return_testdata_20002 then inf_ack_only_20002
+#IF return_testdata_20001 then inf_ack_only_20001
+#IF return_testdata_IB001 then acks_IB001
+#IF return_testdata_30001 then bus_ack_only_30001
+#IF return_testdata_IB002 then acks_IB002
+#IF return_testdata_30002 then bus_ack_only_30002
+#IF return_testdata_IB003 then acks_IB003
+#IF return_testdata_30003 then bus_ack_only_30003
+#IF return_INT_testdata_20002 then inf_ack_only_20002
+#IF return_INT_testdata_20001 then inf_ack_only_20001
+IF return_INT_testdata_IB001 then acks_IB001
+IF return_INT_testdata_30001 then bus_ack_only_30001
+IF return_INT_testdata_IB002 then acks_IB002
+IF return_INT_testdata_30002 then bus_ack_only_30002
+IF return_INT_testdata_IB003 then acks_IB003
+IF return_INT_testdata_30003 then bus_ack_only_30003
+IF prod_return_noack then do_process
+IF prod_return_bothack_IB001 then acks_IB001
+IF prod_return_bothack_IB002 then acks_IB002
+IF prod_return_bothack_IB003 then acks_IB003
+IF prod_return_infackonly then inf_ack_only_20013
+IF prod_return_busackonly then bus_ack_only_30001
+IF prod_return_notsetack then inf_ack_only_10002
+IF return_busack_30001 then bus_ack_only_30001
+IF return_busnack_30002 then bus_ack_only_30002
+IF return_busnack_30003 then bus_ack_only_30003
+IF prod_return_bothack then acks_IB001
+END RULE
+
+#ITK010D	ITK Digital Medicine Emergency Supply Document
+BEGIN RULE
+ITK010D
+#IF prod_return_10001 then inf_ack_only_10001
+#IF prod_return_10002 then inf_ack_only_10002
+#IF prod_return_10003 then inf_ack_only_10003
+#IF prod_return_10004 then inf_ack_only_10004
+#IF prod_return_10007 then inf_ack_only_10007
+#IF prod_return_20002 then inf_ack_only_20002
+#IF prod_return_20004 then inf_ack_only_20004
+IF return_infack_invrep then inf_ack_only_invrep
+IF return_infnack_10001 then inf_ack_only_10001
+IF return_infnack_10002 then inf_ack_only_10002
+IF return_infnack_10003 then inf_ack_only_10003
+IF return_infnack_10004 then inf_ack_only_10004
+IF return_infnack_10005 then inf_ack_only_10005
+IF return_infnack_10006 then inf_ack_only_10006
+IF return_infnack_10007 then inf_ack_only_10007
+IF return_infnack_10008 then inf_ack_only_10008
+IF return_infnack_10009 then inf_ack_only_10009
+IF return_infnack_10010 then inf_ack_only_10010
+IF return_infnack_20001 then inf_ack_only_20001
+IF return_infnack_20002 then inf_ack_only_20002
+IF return_infnack_20003 then inf_ack_only_20003
+IF return_infnack_20004 then inf_ack_only_20004
+IF return_infnack_20005 then inf_ack_only_20005
+IF return_infnack_20006 then inf_ack_only_20006
+IF return_infnack_20007 then inf_ack_only_20007
+IF return_infnack_20008 then inf_ack_only_20008
+IF return_infnack_20009 then inf_ack_only_20009
+IF return_infnack_20010 then inf_ack_only_20010
+IF return_infnack_20011 then inf_ack_only_20011
+IF return_infnack_20012 then inf_ack_only_20012
+IF return_infnack_20013 then inf_ack_only_20013
+#IF return_testdata_20002 then inf_ack_only_20002
+#IF return_testdata_20001 then inf_ack_only_20001
+#IF return_testdata_IB001 then acks_IB001
+#IF return_testdata_30001 then bus_ack_only_30001
+#IF return_testdata_IB002 then acks_IB002
+#IF return_testdata_30002 then bus_ack_only_30002
+#IF return_testdata_IB003 then acks_IB003
+#IF return_testdata_30003 then bus_ack_only_30003
+#IF return_INT_testdata_20002 then inf_ack_only_20002
+#IF return_INT_testdata_20001 then inf_ack_only_20001
+IF return_INT_testdata_IB001 then acks_IB001
+IF return_INT_testdata_30001 then bus_ack_only_30001
+IF return_INT_testdata_IB002 then acks_IB002
+IF return_INT_testdata_30002 then bus_ack_only_30002
+IF return_INT_testdata_IB003 then acks_IB003
+IF return_INT_testdata_30003 then bus_ack_only_30003
+IF prod_return_noack then do_process
+IF prod_return_bothack_IB001 then acks_IB001
+IF prod_return_bothack_IB002 then acks_IB002
+IF prod_return_bothack_IB003 then acks_IB003
+IF prod_return_infackonly then inf_ack_only_20013
+IF prod_return_busackonly then bus_ack_only_30001
+IF prod_return_notsetack then inf_ack_only_10002
+IF return_busack_30001 then bus_ack_only_30001
+IF return_busnack_30002 then bus_ack_only_30002
+IF return_busnack_30003 then bus_ack_only_30003
+IF prod_return_bothack then acks_IB001
+END RULE
+
+
+#ITK012M ITK National Pathology
+BEGIN RULE
+ITK012M
+#IF prod_return_10001 then inf_ack_only_10001
+#IF prod_return_10002 then inf_ack_only_10002
+#IF prod_return_10003 then inf_ack_only_10003
+#IF prod_return_10004 then inf_ack_only_10004
+#IF prod_return_10007 then inf_ack_only_10007
+#IF prod_return_20002 then inf_ack_only_20002
+#IF prod_return_20004 then inf_ack_only_20004
+IF return_infack_invrep then inf_ack_only_invrep
+IF return_infnack_10001 then inf_ack_only_10001
+IF return_infnack_10002 then inf_ack_only_10002
+IF return_infnack_10003 then inf_ack_only_10003
+IF return_infnack_10004 then inf_ack_only_10004
+IF return_infnack_10005 then inf_ack_only_10005
+IF return_infnack_10006 then inf_ack_only_10006
+IF return_infnack_10007 then inf_ack_only_10007
+IF return_infnack_10008 then inf_ack_only_10008
+IF return_infnack_10009 then inf_ack_only_10009
+IF return_infnack_10010 then inf_ack_only_10010
+IF return_infnack_20001 then inf_ack_only_20001
+IF return_infnack_20002 then inf_ack_only_20002
+IF return_infnack_20003 then inf_ack_only_20003
+IF return_infnack_20004 then inf_ack_only_20004
+IF return_infnack_20005 then inf_ack_only_20005
+IF return_infnack_20006 then inf_ack_only_20006
+IF return_infnack_20007 then inf_ack_only_20007
+IF return_infnack_20008 then inf_ack_only_20008
+IF return_infnack_20009 then inf_ack_only_20009
+IF return_infnack_20010 then inf_ack_only_20010
+IF return_infnack_20011 then inf_ack_only_20011
+IF return_infnack_20012 then inf_ack_only_20012
+IF return_infnack_20013 then inf_ack_only_20013
+#IF return_testdata_20002 then inf_ack_only_20002
+#IF return_testdata_20001 then inf_ack_only_20001
+#IF return_testdata_IB001 then acks_IB001
+#IF return_testdata_30001 then bus_ack_only_30001
+#IF return_testdata_IB002 then acks_IB002
+#IF return_testdata_30002 then bus_ack_only_30002
+#IF return_testdata_IB003 then acks_IB003
+#IF return_testdata_30003 then bus_ack_only_30003
+#IF return_INT_testdata_20002 then inf_ack_only_20002
+#IF return_INT_testdata_20001 then inf_ack_only_20001
+IF return_INT_testdata_IB001 then acks_IB001
+IF return_INT_testdata_30001 then bus_ack_only_30001
+IF return_INT_testdata_IB002 then acks_IB002
+IF return_INT_testdata_30002 then bus_ack_only_30002
+IF return_INT_testdata_IB003 then acks_IB003
+IF return_INT_testdata_30003 then bus_ack_only_30003
+IF prod_return_noack then do_process
+IF prod_return_bothack_IB001 then acks_IB001
+IF prod_return_bothack_IB002 then acks_IB002
+IF prod_return_bothack_IB003 then acks_IB003
+IF prod_return_infackonly then inf_ack_only_20013
+IF prod_return_busackonly then bus_ack_only_30001
+IF prod_return_notsetack then inf_ack_only_10002
+IF return_busack_30001 then bus_ack_only_30001
+IF return_busnack_30002 then bus_ack_only_30002
+IF return_busnack_30003 then bus_ack_only_30003
+IF prod_return_bothack then acks_IB001
+END RULE
+
+BEGIN RULE
+pds-birth-notification-1
+IF bundle then no_response
+END RULE
+
+BEGIN RULE
+pds-change-of-address-1
+IF bundle then no_response
+END RULE
+
+BEGIN RULE
+pds-change-of-gp-1
+IF bundle then no_response
+END RULE
+
+BEGIN RULE
+pds-death-notification-1
+IF bundle then no_response
+END RULE
+
+BEGIN RULE
+blood-spot-test-outcome-1
+IF bundle then no_response
+END RULE
+
+BEGIN RULE
+newborn-hearing-1
+IF bundle then no_response
+END RULE
+
+BEGIN RULE
+nipe-outcome-1
+IF bundle then no_response
+END RULE
