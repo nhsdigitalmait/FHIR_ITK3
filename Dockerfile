@@ -13,6 +13,10 @@ RUN mkdir /home/service/TKW/config/FHIR_ITK3/intermediary_temp/ && chown service
 RUN mkdir /home/service/TKW/config/FHIR_ITK3/messages_for_validation/
 RUN sh set-all-configurations.sh
 
+ENV MESH001=MESH001
+ENV MESH002=MESH002
+ENV MESH003=MESH003
+
 USER service
 ENTRYPOINT ["bash", "runtkwfhirvalidator.sh"]
 

@@ -7,7 +7,7 @@ else
 fi
 
 # Update all instances of local dir with docker image directories for all config/contrib entries
-sed -i -e 's|TKW_ROOT/config/FHIR_ITK3/MESH-DATA-HOME|/home/service/MESH-DATA-HOME/|g' ${configDirectory}/tkw-x.properties
+sed -i -e 's|TKW_ROOT/config/FHIR_ITK3/MESH-DATA-HOME/|/home/service/MESH-DATA-HOME/|g' ${configDirectory}/tkw-x.properties
 sed -i -e 's|TKW_ROOT/|/home/service/TKW/|g' ${configDirectory}/tkw-x.properties
 
 # Update all output directories with docker image volume directories
