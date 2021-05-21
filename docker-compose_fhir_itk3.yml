@@ -1,12 +1,12 @@
 version: '2.0'
 services:
-    tkw_fhir_itk3:
-        volumes:
-            - '${HOME}/Scratch/fhir_itk3_data:/home/service/data'
-            - '${HOME}/TKW-5.0.5/TKW/config/FHIR_ITK3/MESH-DATA-HOME:/home/service/MESH-DATA-HOME'
-            - '${HOME}/Technical_Specialist_Folder/fhir/Assets/NHSD.Assets.STU3_1.3.0/node_modules/NHSD.Assets.STU3:/home/service/fhir'
-            environment:
-                - MESH001=NOWOT004
-                - MESH002=FZZ25OT002
-                - MESH003=R7C01OT001
-        image: 'nhsdigitalmait/tkw_fhir_itk3:0.1'
+  tkw_fhir_itk3:
+    volumes:
+      - '${HOME}/Scratch/fhir_itk3_data:/home/service/data'
+      - '${HOME}/TKW-5.0.5/TKW/config/FHIR_ITK3/MESH-DATA-HOME:/home/service/MESH-DATA-HOME'
+      - '${HOME}/Technical_Specialist_Folder/fhir/Assets/NHSD.Assets.STU3_1.3.0/node_modules/NHSD.Assets.STU3:/home/service/fhir'
+    environment:
+      - MESH001=NOWOT004
+      - MESH002=FZZ25OT002
+      - MESH003=R7C01OT001
+    image: 'nhsdigitalmait/tkw_fhir_itk3:0.1'
